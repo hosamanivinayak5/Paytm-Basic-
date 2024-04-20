@@ -12,4 +12,4 @@ app.use(cors(
     }
 ));
 app.use(bodyParser.json());
-app.use("https://paytm-basic-pi.vercel.app/api/v1/",mainrouter);
+app.use("/api/v1/",mainrouter);
