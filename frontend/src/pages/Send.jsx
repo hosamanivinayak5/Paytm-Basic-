@@ -42,7 +42,7 @@ export const Send = () => {
                             <button
                                 onClick={() => {
                                     axios.post(
-                                        "http://localhost:3000/api/v1/account/transfer",
+                                        "https://paytm-basic-frontend-tau.vercel.app/api/v1/account/transfer",
                                         {
                                             to: id,
                                             amount,

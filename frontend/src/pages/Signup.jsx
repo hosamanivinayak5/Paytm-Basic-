@@ -25,7 +25,7 @@ const [PASSWORD,setPassword]=useState("");
           <div className="pt-4">
          <ButtonComponent  label={"SIGN UP"} onClick={async()=>
          {
-          const response=await  axios.post("http://localhost:3000/api/v1/user/signup",{
+          const response=await  axios.post("https://paytm-basic-pi.vercel.app/api/v1/user/signup",{
                 username,
                 firstname:Firstname,
                 lastname:lastname,
