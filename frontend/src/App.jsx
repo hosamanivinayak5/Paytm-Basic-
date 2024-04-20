@@ -9,10 +9,10 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
-      <Route path="https://paytm-basic-frontend-tau.vercel.app/signup" element={<Signup/>}>SIGNUP</Route>
-      <Route path="https://paytm-basic-frontend-tau.vercel.app/signin" element={<Signin/>}>SIGIN</Route>
-      <Route path="https://paytm-basic-frontend-tau.vercel.app/dashboard" element={<Dashboard/>}></Route>
-      <Route path="https://paytm-basic-frontend-tau.vercel.app/send" element={<Send/>}></Route>
+      <Route path="/signup" element={<Signup/>}>SIGNUP</Route>
+      <Route path="/signin" element={<Signin/>}>SIGIN</Route>
+      <Route path="/dashboard" element={<Dashboard/>}></Route>
+      <Route path="/send" element={<Send/>}></Route>
     </Routes>
     </BrowserRouter>
    
