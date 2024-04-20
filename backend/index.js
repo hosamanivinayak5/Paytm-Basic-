@@ -5,7 +5,7 @@ const mainrouter=require("./routes/index");
 const bodyParser = require("body-parser");
 
 app.use(cors({
-    origin:["https://paytm-basic-frontend-tau.vercel.app"],
+    origin:["https://paytm-basic-frontend-tau.vercel.app/"],
     methods:["POST","GET","PUT"],
     credentials:true
 }));
