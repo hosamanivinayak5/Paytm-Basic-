@@ -8,7 +8,7 @@ app.use(cors(
     {
         origin:["https://paytm-basic-frontend-tau.vercel.app"],
         methods:["POST","GET","PUT"],
-        credentials:false
+        credentials:true
     }
 ));
 app.use(bodyParser.json());
