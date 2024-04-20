@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 
 app.use(cors());
 app.use(bodyParser.json());
-app.use("/api/v1",mainrouter);
+app.use("https://paytm-basic-frontend-tau.vercel.app/api/v1",mainrouter);
 const port=3000;
 app.listen(port,()=>{
     console.log(`app is listning at ${port}`)
