@@ -20,9 +20,9 @@ const [PASSWORD,setPassword]=useState("");
 <Inputbox label={"Password"} placeholder={"dsfasfd"} onchange={e=>setPassword(e.target.value)}/>
 <div className="pt-4">
     <ButtonComponent label={"Sign in"} onClick={async()=>{
-        const response=await  axios.post("https://paytm-basic-pi.vercel.app/api/v1/user/signin",{
+        const response=await axios.post("https://paytm-basic-pi.vercel.app/api/v1/user/signin",{
             username,
-            password:PASSWORD
+            password:PASSWORD,
         })
     localStorage.setItem("token",response.data.token)
     navigate("/dashboard")
