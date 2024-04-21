@@ -6,7 +6,10 @@ import { Inputbox } from "../components/inputbox";
 import { Subheading } from "../components/subheading";
 import axios from "axios"
 export function Signin()
-{   const navigate=useNavigate();
+{
+const navigate=useNavigate();
+const [username,setusername]=useState("");
+const [PASSWORD,setPassword]=useState("");
     return<div className="bg-slate-300 flex justify-center   h-screen	">
     <div className="flex flex-col justify-center">
         <div className="bg-white p-1 rounded-lg h-max text-center px-2 w-80">
@@ -16,10 +19,8 @@ export function Signin()
 <Inputbox label={"Password"} placeholder={"dsfasfd"}/>
 <div className="pt-4">
     <ButtonComponent label={"Sign in"} onClick={async()=>{
-        const response=await  axios.post("https://paytm-basic-pi.vercel.app/api/v1/user/signup",{
+        const response=await  axios.post("https://paytm-basic-pi.vercel.app/api/v1/user/signin",{
             username,
-            firstname:Firstname,
-            lastname:lastname,
             password:PASSWORD
         })
     localStorage.setItem("token",response.data.token)
