@@ -1,8 +1,9 @@
-export function HOme()
+import { Link } from "react-router-dom"
+
+export function Home()
 { return<div className="flex justify-between">
-    <div>SIGNUP</div>
-    <div>SIGIN</div>
-    
+    <Link to={"/signup"}>SIGNUP</Link>
+    <Link to={"/signin"}>SIGNIN</Link>
 </div>
 
 }

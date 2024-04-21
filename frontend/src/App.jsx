@@ -4,13 +4,13 @@ import { Signin } from "./pages/Signin"
 import { Dashboard } from "./pages/Dashboard"
 import { Send } from "./pages/Send"
 import './App.css'
-import { HOme } from "./pages/Home"
+import { Home } from "./pages/Home"
 function App() {
 
   return (
     <BrowserRouter>
     <Routes >
-      <Route path="/" element={<HOme/>}/>
+      <Route path="/" element={<Home/>}/>
       <Route path="/signup" element={<Signup/>}  ></Route>
       <Route path="/signin" element={<Signin/>}></Route>
       <Route path="/dashboard" element={<Dashboard/>}></Route>
