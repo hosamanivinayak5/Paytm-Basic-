@@ -16,8 +16,8 @@ const [PASSWORD,setPassword]=useState("");
         <div className="bg-white p-1 rounded-lg h-max text-center px-2 w-80">
  <Heading label={"Sign in"}></Heading>
 <Subheading label={"Enter ur credentials to sign in"}/>
-<Inputbox label={"Username"} placeholder={"sadf@gmail.com"}/>
-<Inputbox label={"Password"} placeholder={"dsfasfd"}/>
+<Inputbox label={"Username"} placeholder={"sadf@gmail.com"} onchange={e=>setusername(e.target.value)}/>
+<Inputbox label={"Password"} placeholder={"dsfasfd"} onchange={e=>setPassword(e.target.value)}/>
 <div className="pt-4">
     <ButtonComponent label={"Sign in"} onClick={async()=>{
         const response=await  axios.post("https://paytm-basic-pi.vercel.app/api/v1/user/signin",{
