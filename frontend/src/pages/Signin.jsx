@@ -4,7 +4,7 @@ import { ButtonComponent } from "../components/Button";
 import { Heading } from "../components/heading";
 import { Inputbox } from "../components/inputbox";
 import { Subheading } from "../components/subheading";
-
+import axios from "axios"
 export function Signin()
 {   const navigate=useNavigate();
     return<div className="bg-slate-300 flex justify-center   h-screen	">
